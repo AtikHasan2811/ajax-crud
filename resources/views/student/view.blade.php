@@ -267,20 +267,8 @@
                 error: function (error){
                     alert('data not found')
                 }
-
-
-
-
-
             });
-
-
-
-
         });
-
-
-
     });
 
 

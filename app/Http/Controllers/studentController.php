@@ -48,4 +48,10 @@ class studentController extends Controller
     }
 
 
+
+    public function show_password(){
+        return view('show_password.view');
+    }
+
+
 }

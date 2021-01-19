@@ -85,8 +85,8 @@
                 </div>
 
                 <div class="links">
-                    <a href="{{route('view')}}">Student List</a>
-                    <a href="https://laracasts.com">Student Create</a>
+                    <a href="{{route('view')}}">ajax crud</a>
+                    <a href="{{route('show_password')}}">Jqu_Show_Password</a>
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://blog.laravel.com">Blog</a>
                     <a href="https://nova.laravel.com">Nova</a>

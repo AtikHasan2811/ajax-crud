@@ -22,3 +22,6 @@ Route::post('/student/store','studentController@store')->name('store');
 Route::get('student/edit/{id}','studentController@edit')->name('edit');
 Route::post('/student/update/','studentController@update')->name('update');
 Route::post('student/delete/','studentController@delete')->name('delete');
+//show password
+
+Route::get('show_password','studentController@show_password')->name('show_password');
