@@ -11,7 +11,6 @@ class studentController extends Controller
 {
     public function index(){
         $data=array();
-
         $data['students']=student::all();
    return view('student.view',$data);
     }
@@ -22,8 +21,13 @@ class studentController extends Controller
         $data->class=$request->class;
         $data->section=$request->section;
         $data->save();
+
+
+
         Session::flash('alert-success', 'success');
 //        return redirect()->back();
+
+
 
     }
 
@@ -51,6 +55,29 @@ class studentController extends Controller
 
     public function show_password(){
         return view('show_password.view');
+    }
+
+
+    public function username(Request $request){
+
+        $data=student::where('name',$request->name)->get();
+        $count=count($data);
+
+        if ($count > 0){
+//            return response()->json(10);
+
+            echo '<span class="text-danger">User Name Not Available</span>';
+
+        }else{
+            echo '<span class="text-danger">User Name Available</span>';
+        }
+
+//        return response()->json($count);
+
+
+
+
+
     }
 
 

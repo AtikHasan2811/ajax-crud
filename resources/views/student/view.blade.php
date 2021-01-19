@@ -29,7 +29,7 @@
             <div class="card-body">
 
 
-                <div class="div">
+                <div class="div" id="load_tweets">
 
                     <table class="table table-dark">
                         <thead>
@@ -232,11 +232,9 @@
         $('.editBtn').on('click',function (){
           $('#editexampleModal').modal('show');
           $tr = $(this).closest('tr');
-
           var data=$tr.children("td").map(function (){
               return $(this).text();
           }).get();
-
           // console.log(data);
           $('#id').val(data[1]);
           $('#ename').val(data[2]);
@@ -250,11 +248,8 @@
 <script type="text/javascript">
 
     $(document).ready(function (){
-
-
         $('#editForm').on('submit',function (e){
             e.preventDefault();
-
             $.ajax({
                 type: "post",
                 url: "{{url('/student/update/')}}",
@@ -262,7 +257,6 @@
                 success: function (restonce){
                     alert('data save successfully')
                     $('#editexampleModal').hidden();
-
                 },
                 error: function (error){
                     alert('data not found')
@@ -298,20 +292,13 @@
                     $('#exampleModal').modal('hide');
                     // location.reload();
                     alert('data save');
-
                 },
                 error: function (error){
                     console.log(error)
                     alert("data not save");
                 }
-
             });
-
-
         });
-
-
-
     })
 
 
@@ -348,13 +335,7 @@
            error: function (error){
                alert('data not savel(');
            }
-
-
        })
-
-
-
-
     });
 
 

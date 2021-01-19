@@ -24,42 +24,7 @@
             <div class="card-body">
 
 
-                <div class="div">
 
-                    <table class="table table-dark">
-                        <thead>
-                        <tr>
-                            <th scope="col">#Id</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Class</th>
-                            <th scope="col">Section</th>
-                            <th scope="col">Action</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-{{--                        @foreach($students as $key=>$student)--}}
-{{--                        <tr>--}}
-
-{{--                            <td scope="row" >{{$key+1}}</td>--}}
-{{--                            <td scope="row" style="display: none;" >{{$student->id}}</td>--}}
-{{--                            <td>{{$student->name}}</td>--}}
-{{--                            <td>{{$student->class}}</td>--}}
-{{--                            <td>{{$student->section}}</td>--}}
-{{--                            <td>--}}
-{{--                                <div class="btn-group">--}}
-{{--                                    <a href="#" class="btn btn-success editBtn"><i class="fa fa-edit"></i>Edit</a>--}}
-{{--                                    <a class="btn btn-danger deletebtn" ><i class="fa fa-edit"></i>Delete</a>--}}
-{{--                                </div>--}}
-
-{{--                            </td>--}}
-{{--                        </tr>--}}
-{{--                        @endforeach--}}
-                        </tbody>
-                    </table>
-
-
-
-                </div>
 
             </div>
         </div>
@@ -91,17 +56,9 @@
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Name</label>
                                 <input type="text"  class="form-control" id="name" name="name"  placeholder="Enter Name" value="">
+                                <span id="availablility"></span>
                             </div>
 
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Class</label>
-                                <input type="text" class="form-control" id="class" name="class"  placeholder="Enter Class" value="">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Section</label>
-                                <input type="text" class="form-control" id="section" name="section"  placeholder="Enter Subject" value="">
-                            </div>
 
 
 
@@ -147,24 +104,35 @@
 
     $(document).ready(function (){
 
-
-        $('#editForm').on('submit',function (e){
-            e.preventDefault();
-
+        $('#name').keydown(function (){
+            var username=$(this).val();
             $.ajax({
                 type: "post",
-                url: "{{url('/student/update/')}}",
-                data: $('#editForm').serialize(),
-                success: function (restonce){
-                    alert('data save successfully')
-                    $('#editexampleModal').hidden();
-
-                },
-                error: function (error){
-                    alert('data not found')
+                url: "{{route('username')}}",
+                data: $('#addForm').serialize(),
+                success: function (responces){
+                    console.log(responces)
+                    $('#availablility').html(responces);
                 }
-            });
-        });
+            })
+
+        })
+        
+
+        $('#name').keyup(function (){
+            var username=$(this).val();
+            $.ajax({
+                type: "post",
+                url: "{{route('username')}}",
+                data: $('#addForm').serialize(),
+                success: function (responces){
+                    console.log(responces)
+                    $('#availablility').html(responces);
+                }
+            })
+
+        })
+
     });
 
 

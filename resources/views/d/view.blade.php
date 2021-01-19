@@ -47,8 +47,8 @@
 {{--                            <td>{{$student->section}}</td>--}}
 {{--                            <td>--}}
 {{--                                <div class="btn-group">--}}
-{{--                                    <a href="#" class="btn btn-success editBtn"><i class="fa fa-edit"></i>Edit</a>--}}
-{{--                                    <a class="btn btn-danger deletebtn" ><i class="fa fa-edit"></i>Delete</a>--}}
+{{--                                    <name_available href="#" class="btn btn-success editBtn"><i class="fa fa-edit"></i>Edit</name_available>--}}
+{{--                                    <name_available class="btn btn-danger deletebtn" ><i class="fa fa-edit"></i>Delete</name_available>--}}
 {{--                                </div>--}}
 
 {{--                            </td>--}}

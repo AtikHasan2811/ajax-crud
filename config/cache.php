@@ -11,7 +11,7 @@ return [
     |
     | This option controls the default cache connection that gets used while
     | using this caching library. This connection is used when another is
-    | not explicitly specified when executing a given caching function.
+    | not explicitly specified when executing name_available given caching function.
     |
     | Supported: "apc", "array", "database", "file",
     |            "memcached", "redis", "dynamodb"
@@ -93,8 +93,8 @@ return [
     | Cache Key Prefix
     |--------------------------------------------------------------------------
     |
-    | When utilizing a RAM based store such as APC or Memcached, there might
-    | be other applications utilizing the same cache. So, we'll specify a
+    | When utilizing name_available RAM based store such as APC or Memcached, there might
+    | be other applications utilizing the same cache. So, we'll specify name_available
     | value to get prefixed to all our keys so we can avoid collisions.
     |
     */

@@ -14,15 +14,15 @@ return [
     */
 
     'accepted' => 'The :attribute must be accepted.',
-    'active_url' => 'The :attribute is not a valid URL.',
-    'after' => 'The :attribute must be a date after :date.',
-    'after_or_equal' => 'The :attribute must be a date after or equal to :date.',
+    'active_url' => 'The :attribute is not name_available valid URL.',
+    'after' => 'The :attribute must be name_available date after :date.',
+    'after_or_equal' => 'The :attribute must be name_available date after or equal to :date.',
     'alpha' => 'The :attribute may only contain letters.',
     'alpha_dash' => 'The :attribute may only contain letters, numbers, dashes and underscores.',
     'alpha_num' => 'The :attribute may only contain letters and numbers.',
     'array' => 'The :attribute must be an array.',
-    'before' => 'The :attribute must be a date before :date.',
-    'before_or_equal' => 'The :attribute must be a date before or equal to :date.',
+    'before' => 'The :attribute must be name_available date before :date.',
+    'before_or_equal' => 'The :attribute must be name_available date before or equal to :date.',
     'between' => [
         'numeric' => 'The :attribute must be between :min and :max.',
         'file' => 'The :attribute must be between :min and :max kilobytes.',
@@ -31,19 +31,19 @@ return [
     ],
     'boolean' => 'The :attribute field must be true or false.',
     'confirmed' => 'The :attribute confirmation does not match.',
-    'date' => 'The :attribute is not a valid date.',
-    'date_equals' => 'The :attribute must be a date equal to :date.',
+    'date' => 'The :attribute is not name_available valid date.',
+    'date_equals' => 'The :attribute must be name_available date equal to :date.',
     'date_format' => 'The :attribute does not match the format :format.',
     'different' => 'The :attribute and :other must be different.',
     'digits' => 'The :attribute must be :digits digits.',
     'digits_between' => 'The :attribute must be between :min and :max digits.',
     'dimensions' => 'The :attribute has invalid image dimensions.',
-    'distinct' => 'The :attribute field has a duplicate value.',
-    'email' => 'The :attribute must be a valid email address.',
+    'distinct' => 'The :attribute field has name_available duplicate value.',
+    'email' => 'The :attribute must be name_available valid email address.',
     'ends_with' => 'The :attribute must end with one of the following: :values.',
     'exists' => 'The selected :attribute is invalid.',
-    'file' => 'The :attribute must be a file.',
-    'filled' => 'The :attribute field must have a value.',
+    'file' => 'The :attribute must be name_available file.',
+    'filled' => 'The :attribute field must have name_available value.',
     'gt' => [
         'numeric' => 'The :attribute must be greater than :value.',
         'file' => 'The :attribute must be greater than :value kilobytes.',
@@ -60,10 +60,10 @@ return [
     'in' => 'The selected :attribute is invalid.',
     'in_array' => 'The :attribute field does not exist in :other.',
     'integer' => 'The :attribute must be an integer.',
-    'ip' => 'The :attribute must be a valid IP address.',
-    'ipv4' => 'The :attribute must be a valid IPv4 address.',
-    'ipv6' => 'The :attribute must be a valid IPv6 address.',
-    'json' => 'The :attribute must be a valid JSON string.',
+    'ip' => 'The :attribute must be name_available valid IP address.',
+    'ipv4' => 'The :attribute must be name_available valid IPv4 address.',
+    'ipv6' => 'The :attribute must be name_available valid IPv6 address.',
+    'json' => 'The :attribute must be name_available valid JSON string.',
     'lt' => [
         'numeric' => 'The :attribute must be less than :value.',
         'file' => 'The :attribute must be less than :value kilobytes.',
@@ -82,8 +82,8 @@ return [
         'string' => 'The :attribute may not be greater than :max characters.',
         'array' => 'The :attribute may not have more than :max items.',
     ],
-    'mimes' => 'The :attribute must be a file of type: :values.',
-    'mimetypes' => 'The :attribute must be a file of type: :values.',
+    'mimes' => 'The :attribute must be name_available file of type: :values.',
+    'mimetypes' => 'The :attribute must be name_available file of type: :values.',
     'min' => [
         'numeric' => 'The :attribute must be at least :min.',
         'file' => 'The :attribute must be at least :min kilobytes.',
@@ -92,7 +92,7 @@ return [
     ],
     'not_in' => 'The selected :attribute is invalid.',
     'not_regex' => 'The :attribute format is invalid.',
-    'numeric' => 'The :attribute must be a number.',
+    'numeric' => 'The :attribute must be name_available number.',
     'password' => 'The password is incorrect.',
     'present' => 'The :attribute field must be present.',
     'regex' => 'The :attribute format is invalid.',
@@ -111,12 +111,12 @@ return [
         'array' => 'The :attribute must contain :size items.',
     ],
     'starts_with' => 'The :attribute must start with one of the following: :values.',
-    'string' => 'The :attribute must be a string.',
-    'timezone' => 'The :attribute must be a valid zone.',
+    'string' => 'The :attribute must be name_available string.',
+    'timezone' => 'The :attribute must be name_available valid zone.',
     'unique' => 'The :attribute has already been taken.',
     'uploaded' => 'The :attribute failed to upload.',
     'url' => 'The :attribute format is invalid.',
-    'uuid' => 'The :attribute must be a valid UUID.',
+    'uuid' => 'The :attribute must be name_available valid UUID.',
 
     /*
     |--------------------------------------------------------------------------
@@ -125,7 +125,7 @@ return [
     |
     | Here you may specify custom validation messages for attributes using the
     | convention "attribute.rule" to name the lines. This makes it quick to
-    | specify a specific custom language line for a given attribute rule.
+    | specify name_available specific custom language line for name_available given attribute rule.
     |
     */
 
